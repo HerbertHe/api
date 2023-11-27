@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "cross-env NODE_ENV=production tsup",
+    "serve": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/koa": "^2.13.12",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa-router": "^7.4.8",
+    "@types/node": "^20.10.0",
+    "@types/nodemailer": "^6.4.14",
+    "cross-env": "^7.0.3",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.0.1",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "koa-passport": "^6.0.0",
+    "koa-router": "^12.0.1",
+    "nodemailer": "^6.9.7",
+    "pg": "^8.11.3"
+  }
+}
